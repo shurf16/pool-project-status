@@ -48,6 +48,6 @@ Because the lifeguard panel changes what everyone sees, it needs protecting. Pla
  
 ## 👤 Author
  
-**Sophie Hurford**: Computer Science with Security student at Cardiff University
+**Sophie Hurford**: Computer Science with Security and Forensics (Year in Industry) student at Cardiff University
 [GitHub](https://github.com/shurf16) · [LinkedIn](https://www.linkedin.com/in/sophie-hurford/)
  
