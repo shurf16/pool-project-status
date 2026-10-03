@@ -17,15 +17,14 @@ As a lifeguard at Reed's School, I noticed two problems. Pool updates were being
 - Update the busyness status through a **PIN-protected lifeguard panel**
 ## 🔐 Security
  
-Because the lifeguard panel changes what everyone sees, it needs protecting. Planned security measures:
- 
-- [ ] **Hashed PIN**: the PIN is stored as a hash (never in plain text) and checked with Werkzeug's `check_password_hash`
-- [ ] **Brute-force protection**: limit PIN attempts and add a temporary lockout after repeated failures
-- [ ] **CSRF protection**: forms protected with Flask-WTF so other sites can't submit updates on a user's behalf
+Because the lifeguard panel changes what everyone sees, it needs protecting. This is a core focus of the project, and I'm using it as a chance to learn proper security practices.
+
+Planned:
 - [ ] **Input validation**: only accept the allowed status values
-- [ ] **Session timeout**: lifeguards are logged out automatically after inactivity
-- [ ] **Secrets kept out of the code**: secret key and PIN hash loaded from environment variables, not committed to GitHub
+- [ ] **Limit PIN attempts**
 - [ ] **Audit log**: record when the status was changed
+Learning as I build: temporary lockouts after repeated failed attempts, hashed Pin storage, and session timeouts. These will be added (and documented properly) once I understand them, not before.
+
 ## 🛠️ Built with
  
 - **Python** + **Flask**: web app and routing
